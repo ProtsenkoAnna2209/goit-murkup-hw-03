@@ -8,15 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
     <!--header-->
-
+           
     <header class="header">
-
+        <div class="container header-container"> 
+            
         <nav class="header-nav">
             <a class="link-logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
     
@@ -34,7 +38,7 @@
                 </li>
     
             </ul>
-          </nav>
+        </nav>
           <address class="contacts">
             <ul class="header-contacts list">
                 
@@ -45,40 +49,46 @@
               </ul>
           </address>
              
-
+        </div>
     </header>
 
+    
      <!--main-->
 
-    <main class="main">
-
+     <main class="main">
+    
       <section class="main-section">
+        
+     <div class="container">
 
       <h1 class="visually-hidden">Work</h1>
+
+   
 
         <ul class="main-list list">
          
             <li class="main-item">
-                <button class="main-btn btn" type="button">All</button>
+                <button class="main-btn btn btn-all" type="button">All</button>
             </li>
 
             <li class="main-item">
-                <button class="main-btn btn" type="button">Web Site</button>
+                <button class="main-btn btn btn-site" type="button">Web Site</button>
             </li>
 
             <li class="main-item">
-                <button class="main-btn btn" type="button">App</button>
+                <button class="main-btn btn btn-app" type="button">App</button>
             </li>
 
             <li class="main-item">
-                <button class="main-btn btn" type="button">Design</button>
+                <button class="main-btn btn btn-design" type="button">Design</button>
             </li>
 
             <li class="main-item">
-                <button class="main-btn btn" type="button">Marketing</button>
+                <button class="main-btn btn btn-marketing" type="button">Marketing</button>
             </li>
 
         </ul>
+    
              <!--cards-->
         <ul class="cards-list list">
 
@@ -86,10 +96,12 @@
 
                 <a class="cards-link link" href="">
                   <img src="./images/2.1.jpg" alt="banking interface" width="360" height="300">
-
-                  <h2 class="cards-title title">Banking App Interface Concept</h2>
+                  <div class="cards-name">
+                    <h2 class="cards-title title">Banking App Interface Concept</h2>
 
                   <p class="cards-text subtitle">App</p>
+                  </div>
+                  
                 </a>
             </li>
 
@@ -97,18 +109,23 @@
 
                 <a class="cards-link link" href="">
                  <img src="./images/2.2.jpg" alt="payment by phone" width="360" height="300">
-
-                 <h2 class="cards-title title">Cashless Payment</h2>
+                  <div class="cards-name">
+                    <h2 class="cards-title title">Cashless Payment</h2>
 
                  <p class="cards-text subtitle">Marketing</p> 
+                  </div>
+                 
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.3.jpg" alt="application on the manitor" width="360" height="300">
-                 <h2 class="cards-title title">Meditaion App</h2>
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Meditation App</h2>
                 <p class="cards-text subtitle">App</p>
+                 </div>
+
                 
                 </a> 
             </li>
@@ -116,48 +133,66 @@
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.4.jpg" alt="taxi" width="360" height="300">
-                 <h2 class="cards-title title">Taxi Service</h2>
-                 <p class="cards-text subtitle">Marketing</p> 
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Taxi Service</h2>
+                    <p class="cards-text subtitle">Marketing</p>  
+                 </div>
+                 
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.5.jpg" alt="screen" width="360" height="300">
-                 <h2 class="cards-title title">Screen Illustrations</h2>
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Screen Illustrations</h2>
                  <p class="cards-text subtitle">Design</p> 
+                 </div>
+                 
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.6.jpg" alt="happy women" width="360" height="300">
-                 <h2 class="cards-title title">Online Courses</h2>
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Online Courses</h2>
                  <p class="cards-text subtitle">Marketing</p> 
+                 </div>
+                 
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.7.jpg" alt="photo from instagram" width="360" height="300">
-                 <h2 class="cards-title title">Instagram Stories Concept</h2>
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Instagram Stories Concept</h2>
                  <p class="cards-text subtitle">Design</p> 
+                 </div>
+                  
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.8.jpg" alt="fruits and vegetables" width="360" height="300">
-                 <h2 class="cards-title title">Organic Food</h2>
-                 <p class="cards-text subtitle">Web Site</p> 
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Organic Food</h2>
+                 <p class="cards-text subtitle">Web Site</p>
+                 </div>
+                 
                 </a>
             </li>
 
             <li class="cards-item">
                 <a class="cards-link link" href="">
                  <img src="./images/2.9.jpg" alt="a cap of coffee" width="360" height="300">
-                 <h2 class="cards-title title">Fresh Coffee</h2>
+                 <div class="cards-name">
+                    <h2 class="cards-title title">Fresh Coffee</h2>
                  <p class="cards-text subtitle">Web Site</p> 
+                 </div>
+                 
                 </a>
             </li>
             
@@ -165,16 +200,16 @@
 
       </section>
 
-    </main>
-
+     </main>
+     </div>
      <!--footer-->
 
     <footer class="footer">
-        
+       <div class="container">
         <a class="footer-link link" href="./index.html"><span>Web</span>Studio</a>
 
         <p class="footer-text subtitle">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-
+    </div> 
     </footer>
 </body>
 </html>
