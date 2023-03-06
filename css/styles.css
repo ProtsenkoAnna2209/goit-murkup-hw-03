@@ -309,7 +309,7 @@ column-gap: 24px;
 }
 
 .example-item {
-flex-basis: calc((100%-48px) / 3);
+flex-basis: calc((100% - 48px) / 3);
 }
 
 /*-----team-------*/
@@ -339,7 +339,7 @@ display: flex;
 }
 
 .team-item {
-flex-basis: calc((100%-72px) / 4);
+flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-item:not(:last-child) {
@@ -446,7 +446,7 @@ list-style: none;
 
 
 .cards-item {
- flex-basis: calc((100%-48px) / 3); 
+ flex-basis: calc((100% - 48px) / 3); 
 }
 
 .cards-item:not(:nth-child(3n)) {
