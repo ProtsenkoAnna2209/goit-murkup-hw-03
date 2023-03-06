@@ -214,10 +214,8 @@ color: var(--third-color);
 
 .hero-section {
 text-align: center;
-padding-top: 142px;
-padding-bottom: 180px;
-padding-left: auto;
-padding-right: auto;
+padding-top: 188px;
+padding-bottom: 292px;
 
 background-color: var(--main-title-color);
 }
@@ -242,7 +240,8 @@ display: inline-block;
 padding: 16px 32px;
 min-width: 169px;
 text-align: center;
-
+border: none;
+border-radius: 4px;
 color: var(--secondary-title-color);
 background-color: var(--accent-color);
 }
@@ -310,7 +309,7 @@ column-gap: 24px;
 }
 
 .example-item {
-flex-basis: calc(100%-48px/3);
+flex-basis: calc((100%-48px) / 3);
 }
 
 /*-----team-------*/
@@ -340,7 +339,7 @@ display: flex;
 }
 
 .team-item {
-flex-basis: calc(100%-72px/4);
+flex-basis: calc((100%-72px) / 4);
 }
 
 .team-item:not(:last-child) {
@@ -434,7 +433,7 @@ margin-bottom: 8px;
 }
 
 .cards-text {
-    margin-bottom: 32px;
+    margin-bottom: 0;
 
 }
 
@@ -447,14 +446,14 @@ list-style: none;
 
 
 .cards-item {
- flex-basis: calc(100%-48px/3); 
+ flex-basis: calc((100%-48px) / 3); 
 }
 
 .cards-item:not(:nth-child(3n)) {
  margin-right: 24px;
 }
 
-.cards-item:not(:nth-last-child(-3n+3)) {
+.cards-item:not(:nth-last-child(-n+3)) {
     margin-bottom: 48px;
 }
 
@@ -463,8 +462,11 @@ list-style: none;
 }
  
 .cards-name {
-padding: 15px;
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
 border: 1px solid var(--first-background-color);
+border-top: none;
 }
 
 
