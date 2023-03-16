@@ -183,13 +183,29 @@ img {
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     transition: color var(--transition);
+    position: relative;
 
+}
+
+.header-link.active::after {
+    
 }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--secondary-accent-color);
 }
+
+.header-link.active::after {
+content: "";
+width: 100%;
+height: 4px;
+background-color: var(--secondary-accent-color);
+position: absolute;
+left: 0;
+bottom: -28px;
+}
+
 
 .contacts {
     font-style: normal;
@@ -703,7 +719,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: var(--backdrop-color);
+    transition: opacity var(--transition);
+    transition: visibility var(--transition);
 
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -715,4 +739,37 @@ width: 408px;
 height: 576px;
 background-color: var(--modal-color);
 
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+   display: flex;
+   justify-content: center;
+   
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--first-background-color);
+    padding: 0;
+    
+    transition: border-color var(--transition);
+
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border-color: var(--secondary-accent-color);
+
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+fill: var(--secondary-accent-color);
+}
+
+.modal-close-btn-icon {
+    transition: fill var(--transition);
 }
