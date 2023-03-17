@@ -184,6 +184,8 @@ img {
     color: var(--main-title-color);
     transition: color var(--transition);
     position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -200,7 +202,7 @@ height: 4px;
 background-color: var(--secondary-accent-color);
 position: absolute;
 left: 0;
-bottom: 0;
+bottom: -3px;
 border-radius: 2px;
 }
 
@@ -750,9 +752,9 @@ background-color: var(--modal-color);
     right: 24px;
    display: flex;
    justify-content: center;
-   
-    width: 24px;
-    height: 24px;
+   align-items: center;
+   width: 24px;
+   height: 24px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid var(--first-background-color);
@@ -775,4 +777,6 @@ fill: var(--secondary-accent-color);
 
 .modal-close-btn-icon {
     transition: fill var(--transition);
+    width: 8px;
+    height: 8px;
 }
