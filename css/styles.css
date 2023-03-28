@@ -739,8 +739,8 @@ padding-bottom: 8px;
 
 }
 
-.input::placeholder {
-    color: #FFFFFF;
+.footer-form-input::placeholder {
+    color: var(--secondary-title-color);
 }
 
 .footer-submit { 
