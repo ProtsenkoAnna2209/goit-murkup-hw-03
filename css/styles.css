@@ -727,7 +727,7 @@ margin-right: 24px;
     width: 264px;
     height: 40px;
     color: var(--secondary-title-color);
-background-color: transparent;
+background: transparent;
 border: 1px solid var(--secondary-title-color);
 font-size: 12px;
 line-height: 2;
@@ -739,6 +739,9 @@ padding-bottom: 8px;
 
 }
 
+.input::placeholder {
+    color: #FFFFFF;
+}
 
 .footer-submit { 
     display: flex;
